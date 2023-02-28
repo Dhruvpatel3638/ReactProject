@@ -8,7 +8,6 @@ const Single = () => {
   return (
     <div className="single">
       <div className="content">
-        C
         <img
           src="https://images.pexels.com/photos/11908972/pexels-photo-11908972.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           alt=""
