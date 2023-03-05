@@ -67,7 +67,11 @@ const Home = () => {
                   __html: DOMPurify.sanitize(post.desc),
                 }}
               ></p>
-              <button>Read More</button>
+              <div>
+                <Link className="link" to={`/post/${post.id}`}>
+                  <button>Read More</button>
+                </Link>
+              </div>
             </div>
           </div>
         ))}

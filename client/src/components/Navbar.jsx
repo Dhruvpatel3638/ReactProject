@@ -47,11 +47,17 @@ const Navbar = () => {
               <h6>Login</h6>
             </Link>
           )}
-          <span className="write">
-            <Link className="link" to="/write">
-              Write
+          {currentUser ? (
+            <span className="write">
+              <Link className="link" to="/write">
+                Write
+              </Link>
+            </span>
+          ) : (
+            <Link className="link" to="/login">
+              <span className="write">Write</span>
             </Link>
-          </span>
+          )}
         </div>
       </div>
     </div>
