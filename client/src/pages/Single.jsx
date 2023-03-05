@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import Edit from "../img/edit.png";
 import Delete from "../img/delete.png";
-import { Link, Navigate, useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Menu from "../components/Menu";
 import axios from "axios";
 import moment from "moment";
@@ -39,10 +39,6 @@ const Single = () => {
     }
   };
 
-  // const getText = (html) => {
-  //   const doc = new DOMParser().parseFromString(html, "text/html");
-  //   return doc.body.textContent;
-  // };
   return (
     <div className="single">
       <div className="content">

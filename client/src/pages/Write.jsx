@@ -14,10 +14,10 @@ const Write = () => {
 
   const navigate = useNavigate();
 
-  const getText = (html) => {
-    const doc = new DOMParser().parseFromString(html, "text/html");
-    return doc.body.textContent;
-  };
+  // const getText = (html) => {
+  //   const doc = new DOMParser().parseFromString(html, "text/html");
+  //   return doc.body.textContent;
+  // };
 
   const upload = async () => {
     try {

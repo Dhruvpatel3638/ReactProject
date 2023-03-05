@@ -62,12 +62,15 @@ const Home = () => {
               <Link className="link" to={`/post/${post.id}`}>
                 <h1>{post.title}</h1>
               </Link>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: DOMPurify.sanitize(post.desc),
-                }}
-              ></p>
-              <div>
+              <div className="wrapper">
+                <p
+                  className="pwrap"
+                  dangerouslySetInnerHTML={{
+                    __html: DOMPurify.sanitize(post.desc),
+                  }}
+                ></p>
+              </div>
+              <div className="btn">
                 <Link className="link" to={`/post/${post.id}`}>
                   <button>Read More</button>
                 </Link>
