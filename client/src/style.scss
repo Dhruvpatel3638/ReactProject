@@ -1,10 +1,10 @@
-$lightGreen: #bad7e9;
+$lightBlue: #bad7e9;
 
 .app {
   display: flex;
-  justify-content: center;
+  margin-left: 100px;
   .container {
-    width: 1024px;
+    width: 1300px;
 
     .link {
       text-decoration: none;
@@ -17,7 +17,7 @@ $lightGreen: #bad7e9;
       align-items: center;
       justify-content: center;
       height: 100vh;
-      background-color: $lightGreen;
+      background-color: $lightBlue;
 
       h1 {
         font-size: 20px;
@@ -67,6 +67,7 @@ $lightGreen: #bad7e9;
         .logo {
           img {
             width: 130px;
+            margin: 0;
           }
         }
         .links {
@@ -81,7 +82,7 @@ $lightGreen: #bad7e9;
             cursor: pointer;
           }
           .write {
-            background-color: $lightGreen;
+            background-color: $lightBlue;
             width: 50px;
             height: 50px;
             border-radius: 50%;
@@ -105,12 +106,26 @@ $lightGreen: #bad7e9;
     footer {
       margin-top: 100px;
       padding: 20px;
-      background-color: $lightGreen;
+      background-color: $lightBlue;
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      img {
-        height: 50px;
+      flex: 2;
+      .ftr {
+        display: flex;
+        justify-content: start;
+        flex: 5;
+
+        img {
+          height: 50px;
+        }
+      }
+      .ftr1 {
+        display: flex;
+        justify-content: end;
+        flex: 5;
+        p {
+          font-size: 16px;
+        }
       }
     }
 
@@ -191,7 +206,7 @@ $lightGreen: #bad7e9;
 
           &:hover {
             border: 2px solid white;
-            background-color: $lightGreen;
+            background-color: $lightBlue;
             color: black;
           }
         }
@@ -309,7 +324,7 @@ $lightGreen: #bad7e9;
 
     .item {
       border: 1px solid lightgray;
-      padding: 10px;
+      padding: 20px;
       flex: 1;
       display: flex;
       flex-direction: column;
@@ -328,19 +343,11 @@ $lightGreen: #bad7e9;
 
       .buttons {
         display: flex;
-        justify-content: space-between;
 
         :first-child {
           cursor: pointer;
-          color: teal;
-          background-color: #fff;
-          border: 1px solid teal;
-          padding: 3px 5px;
-        }
-        :last-child {
-          cursor: pointer;
-          color: white;
-          background-color: teal;
+          color: black;
+          background-color: $lightBlue;
           border: 1px solid teal;
           padding: 5px;
         }
@@ -350,7 +357,7 @@ $lightGreen: #bad7e9;
         display: flex;
         align-items: center;
         gap: 5px;
-        color: teal;
+        color: black;
       }
     }
   }

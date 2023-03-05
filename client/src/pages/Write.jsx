@@ -76,7 +76,7 @@ const Write = () => {
         <div className="item">
           <h1>Publish</h1>
           <span>
-            <b>Status: </b> Draft
+            <b>Status: </b> Editing
           </span>
           <span>
             <b>Visibility: </b> Public
@@ -92,7 +92,6 @@ const Write = () => {
             Upload Image
           </label>
           <div className="buttons">
-            <button>Save as a draft</button>
             <button onClick={handleSubmit}>Publish</button>
           </div>
         </div>
